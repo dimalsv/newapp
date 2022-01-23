@@ -1,0 +1,6 @@
+<%= form_with(model: [@single_room , @message], remote: true, class: "d-flex" ) do |f| %>
+  <%= f.text_field :content, id: 'chat-text', autocomplete: 'off', placeholder: "Enter message..." %>
+  <%= button_tag(type: "submit", class: "detail-button") do %>
+    Send
+  <% end %>
+<% end %>

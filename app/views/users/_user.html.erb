@@ -1,0 +1,10 @@
+<%= link_to user do %>
+<div class="msg <%= user.id == params[:id].to_i && params[:controller] == 'users' ? 'active' : '' %>">
+<img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%2812%29.png" alt="">
+<div class="msg-detail">
+ <div class="msg-username"><%= user.username.truncate(20) %></div>
+ <div class="msg-content">
+ </div>
+</div>
+</div>
+<% end %>
